@@ -5,15 +5,18 @@ using UnityEngine;
 public class Jogador1 : MonoBehaviour
 {
     
-    public float moveSpeed2 = 5f;
+    public float moveSpeed2;
     public Rigidbody2D rigb2;
     private Vector2 direcao2;
     private bool troca2;
+    public float Speed2;
+    public float DistanciaPausa2;
+    private Transform Target2;
 
 
     void Start()
     {
-        
+        Target2 = GameObject.FindGameObjectWithTag("Player2").GetComponent<Transform>();
     }
 
     void Update()
@@ -24,10 +27,24 @@ public class Jogador1 : MonoBehaviour
             troca2 = !troca2;
         }
 
-       if(troca2 == true)
+       if(!troca2)
         {
+            moveSpeed2 = 1f;
+
             ProcessarInputs();
             Habilidade();
+
+        }
+        
+        if(troca2)
+        {
+            moveSpeed2 = 0f; 
+
+            if(Vector2.Distance(transform.position, Target2.position) > DistanciaPausa2)
+            {
+                transform.position = Vector2.MoveTowards(transform.position, Target2.position, Speed2 * Time.deltaTime);
+            } 
+      
         }
 
 
