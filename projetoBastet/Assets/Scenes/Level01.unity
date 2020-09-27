@@ -85311,6 +85311,26 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!1 &326513757 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7534188611669561522, guid: cfe56e83b47cb5d4796efab3b129fc67,
+    type: 3}
+  m_PrefabInstance: {fileID: 1640583337}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &326513764
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 326513757}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4543aa1967dbbcb4ebbd119f20fbdebb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  distanciaPausa: 1
+  target: {fileID: 983245590}
 --- !u!114 &751227438 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7445481211482966180, guid: 0fb199332843a134cac31d7856ab6fc5,
@@ -85336,10 +85356,20 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 7310724025494076916, guid: cfe56e83b47cb5d4796efab3b129fc67,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7534188611669561522, guid: cfe56e83b47cb5d4796efab3b129fc67,
         type: 3}
       propertyPath: m_Name
       value: Yunet
+      objectReference: {fileID: 0}
+    - target: {fileID: 7534188611669561524, guid: cfe56e83b47cb5d4796efab3b129fc67,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7534188611669561526, guid: cfe56e83b47cb5d4796efab3b129fc67,
         type: 3}
