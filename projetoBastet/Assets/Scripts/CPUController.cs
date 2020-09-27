@@ -30,6 +30,6 @@ public class CPUController : MonoBehaviour
     }
 
     private void FixedUpdate() {
-        
+       rgBody.MovePosition(target.position); 
     }
 }
