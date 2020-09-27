@@ -13,12 +13,13 @@ public class CameraController : MonoBehaviour
     private Vector3 bottomLeftLimit;
     private Vector3 topRightLimit;
 
+    public PlayerController activeController;
+
     private float halfHeight;
     private float halfWidth;
     // Start is called before the first frame update
     void Start()
     {
-        target = FindObjectOfType<PlayerController>().transform;  
 
         halfHeight = Camera.main.orthographicSize;
         halfWidth = halfHeight * Camera.main.aspect;
@@ -26,7 +27,7 @@ public class CameraController : MonoBehaviour
         bottomLeftLimit = theMap.localBounds.min + new Vector3(halfWidth, halfHeight, 0f); 
         topRightLimit = theMap.localBounds.max - new Vector3(halfWidth, halfHeight, 0f);
 
-        PlayerController.instance.SetBounds(theMap.localBounds.min, theMap.localBounds.max);
+        activeController.SetBounds(theMap.localBounds.min, theMap.localBounds.max);
     }
 
     // Update is called once per frame
@@ -39,6 +40,5 @@ public class CameraController : MonoBehaviour
         transform.position = new Vector3(Mathf.Clamp(transform.position.x, bottomLeftLimit.x, topRightLimit.x),
             Mathf.Clamp(transform.position.y, bottomLeftLimit.y, topRightLimit.y), transform.position.z);
 
-            
     }
 }
