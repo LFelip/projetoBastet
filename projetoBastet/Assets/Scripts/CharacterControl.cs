@@ -51,9 +51,6 @@ public class CharacterControl : MonoBehaviour
         activeChar = auxChar;
 
         camera.target = avaliableChars[activeChar].GetComponent<Transform>();
-        camera.activeController = avaliableChars[activeChar].GetComponent<PlayerController>();
-
-        
     }
 }
 

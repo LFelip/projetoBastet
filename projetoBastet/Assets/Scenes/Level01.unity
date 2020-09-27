@@ -195,9 +195,14 @@ PrefabInstance:
       objectReference: {fileID: 320410486}
     - target: {fileID: 1245459395071136676, guid: 2145a6aad30e8334793a03b2a2e001eb,
         type: 3}
-      propertyPath: activeController
+      propertyPath: avaliableChar.Array.data[0]
       value: 
       objectReference: {fileID: 751227438}
+    - target: {fileID: 1245459395071136676, guid: 2145a6aad30e8334793a03b2a2e001eb,
+        type: 3}
+      propertyPath: avaliableChar.Array.data[1]
+      value: 
+      objectReference: {fileID: 326513758}
     - target: {fileID: 1245459395071136678, guid: 2145a6aad30e8334793a03b2a2e001eb,
         type: 3}
       propertyPath: m_Name
@@ -85317,6 +85322,18 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1640583337}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &326513758 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7310724025494076916, guid: cfe56e83b47cb5d4796efab3b129fc67,
+    type: 3}
+  m_PrefabInstance: {fileID: 1640583337}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 326513757}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10e1fe94f24533e44aa385af5747e170, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &751227438 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7445481211482966180, guid: 0fb199332843a134cac31d7856ab6fc5,
@@ -85561,16 +85578,6 @@ PrefabInstance:
     - target: {fileID: 7685834688248604134, guid: 0fb199332843a134cac31d7856ab6fc5,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7685834688248604135, guid: 0fb199332843a134cac31d7856ab6fc5,
-        type: 3}
-      propertyPath: m_FlipX
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7685834688248604135, guid: 0fb199332843a134cac31d7856ab6fc5,
-        type: 3}
-      propertyPath: m_FlipY
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []

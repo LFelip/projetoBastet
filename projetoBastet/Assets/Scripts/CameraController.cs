@@ -13,7 +13,7 @@ public class CameraController : MonoBehaviour
     private Vector3 bottomLeftLimit;
     private Vector3 topRightLimit;
 
-    public PlayerController activeController;
+    public PlayerController[] avaliableChar;
 
     private float halfHeight;
     private float halfWidth;
@@ -27,7 +27,11 @@ public class CameraController : MonoBehaviour
         bottomLeftLimit = theMap.localBounds.min + new Vector3(halfWidth, halfHeight, 0f); 
         topRightLimit = theMap.localBounds.max - new Vector3(halfWidth, halfHeight, 0f);
 
-        activeController.SetBounds(theMap.localBounds.min, theMap.localBounds.max);
+        foreach (PlayerController currentChar in avaliableChar)
+        {   
+            currentChar.SetBounds(theMap.localBounds.min, theMap.localBounds.max);
+        }
+        
     }
 
     // Update is called once per frame

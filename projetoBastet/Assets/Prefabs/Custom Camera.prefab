@@ -98,3 +98,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 0}
   theMap: {fileID: 0}
+  avaliableChar:
+  - {fileID: 0}
+  - {fileID: 0}
