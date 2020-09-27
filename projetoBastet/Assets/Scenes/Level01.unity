@@ -255,7 +255,7 @@ TilemapRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: f886d87b645e46d43a9c170780172557, type: 2}
+  - {fileID: 2100000, guid: bc36818eb2f75a54eaf4e3d222d910a9, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -85331,6 +85331,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   distanciaPausa: 1
   target: {fileID: 983245590}
+  rgBody: {fileID: 0}
 --- !u!114 &751227438 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7445481211482966180, guid: 0fb199332843a134cac31d7856ab6fc5,
@@ -85487,7 +85488,7 @@ PrefabInstance:
     - target: {fileID: 7685834688248604134, guid: 0fb199332843a134cac31d7856ab6fc5,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -5.12
+      value: -1.2
       objectReference: {fileID: 0}
     - target: {fileID: 7685834688248604134, guid: 0fb199332843a134cac31d7856ab6fc5,
         type: 3}
