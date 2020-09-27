@@ -85390,30 +85390,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 7310724025494076916, guid: cfe56e83b47cb5d4796efab3b129fc67,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7310724025494076916, guid: cfe56e83b47cb5d4796efab3b129fc67,
-        type: 3}
-      propertyPath: facingRight
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 7534188611669561522, guid: cfe56e83b47cb5d4796efab3b129fc67,
         type: 3}
       propertyPath: m_Name
       value: Yunet
-      objectReference: {fileID: 0}
-    - target: {fileID: 7534188611669561522, guid: cfe56e83b47cb5d4796efab3b129fc67,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7534188611669561524, guid: cfe56e83b47cb5d4796efab3b129fc67,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7534188611669561526, guid: cfe56e83b47cb5d4796efab3b129fc67,
         type: 3}
@@ -85581,6 +85561,16 @@ PrefabInstance:
     - target: {fileID: 7685834688248604134, guid: 0fb199332843a134cac31d7856ab6fc5,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7685834688248604135, guid: 0fb199332843a134cac31d7856ab6fc5,
+        type: 3}
+      propertyPath: m_FlipX
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7685834688248604135, guid: 0fb199332843a134cac31d7856ab6fc5,
+        type: 3}
+      propertyPath: m_FlipY
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
