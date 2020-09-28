@@ -72938,6 +72938,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7958946485037871237, guid: cfe56e83b47cb5d4796efab3b129fc67,
+        type: 3}
+      propertyPath: m_Constraints
+      value: 4
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cfe56e83b47cb5d4796efab3b129fc67, type: 3}
 --- !u!1 &1655955004
@@ -73204,6 +73209,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Menfis
+      objectReference: {fileID: 0}
+    - target: {fileID: 7685834688248604133, guid: 0fb199332843a134cac31d7856ab6fc5,
+        type: 3}
+      propertyPath: m_Constraints
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 7685834688248604134, guid: 0fb199332843a134cac31d7856ab6fc5,
         type: 3}
