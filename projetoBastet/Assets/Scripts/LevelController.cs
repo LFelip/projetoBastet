@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.Audio;
 
 public class LevelController : MonoBehaviour
 {
@@ -12,7 +13,7 @@ public class LevelController : MonoBehaviour
 
     public Image[] itemSlots;
 
-    static LevelController instance;
+    public static LevelController instance;
     
     void Start()
     {
@@ -23,14 +24,14 @@ public class LevelController : MonoBehaviour
         
     }
 
-    public GetItem(Sprite itemSprite)
+    public void GetItem(Sprite itemSprite)
     {
         foreach (Image itemSlot in itemSlots)
         {
-            if (itemSlot.Sprite == null)
+            if (itemSlot.sprite == null)
             {
-                itemSlot.Sprite = itemSprite;
-                itemSlot.SetEnable(true);
+                itemSlot.sprite = itemSprite;
+                itemSlot.enabled = true;
                 break;
             } 
         }
