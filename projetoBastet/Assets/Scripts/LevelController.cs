@@ -6,10 +6,10 @@ using UnityEngine.Audio;
 
 public class LevelController : MonoBehaviour
 {
-    const int goalRelics = 0;
+    const int goalRelics = 3;
 
     //Pra saber se tem os itens
-    private int relicCount = 0;
+    public int relicCount = 0;
 
     public Image[] itemSlots;
 
@@ -39,7 +39,7 @@ public class LevelController : MonoBehaviour
 
     public bool CanGoNextLevel() 
     {
-        return (relicCount ==  goalRelics);
+        return (relicCount == goalRelics);
     }
 
     
