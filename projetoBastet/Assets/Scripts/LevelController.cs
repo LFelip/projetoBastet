@@ -6,10 +6,10 @@ using UnityEngine.Audio;
 
 public class LevelController : MonoBehaviour
 {
+    const int goalRelics = 0;
+
     //Pra saber se tem os itens
-    private bool hasScepter = false;  
-    private bool hasEarRing = false;  
-    private bool hasAnk     = false;  
+    private int relicCount = 0;
 
     public Image[] itemSlots;
 
@@ -20,8 +20,7 @@ public class LevelController : MonoBehaviour
         if (instance == null )
         {
             instance = this;
-        }
-        
+        }    
     }
 
     public void GetItem(Sprite itemSprite)
@@ -32,9 +31,15 @@ public class LevelController : MonoBehaviour
             {
                 itemSlot.sprite = itemSprite;
                 itemSlot.enabled = true;
+                relicCount++;
                 break;
             } 
         }
+    }
+
+    public bool CanGoNextLevel() 
+    {
+        return (relicCount ==  goalRelics);
     }
 
     
